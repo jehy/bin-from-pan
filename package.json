@@ -1,0 +1,31 @@
+{
+  "name": "bin-from-pan",
+  "version": "1.0.0",
+  "description": "Differentiates between 6 digit BIN and 8 digit BIN in PAN",
+  "main": "index.js",
+  "dependencies": {},
+  "scripts": {
+    "coveralls": "cat ./coverage/lcov.info | ./node_modules/.bin/coveralls",
+    "test": "./node_modules/mocha/bin/mocha",
+    "lint": "node ./node_modules/eslint/bin/eslint.js src test/src index.js",
+    "compile": "node ./node_modules/babel-cli/bin/babel.js --presets es2015 -d ./lib src && node ./node_modules/babel-cli/bin/babel.js --presets es2015 -d ./test/lib test/src",
+    "coverage": "node ./node_modules/.bin/istanbul cover ./node_modules/mocha/bin/_mocha test/index.js",
+    "prepublish": "npm run compile"
+  },
+  "author": "Jehy",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "bluebird": "^3.5.0",
+    "eslint": "^3.19.0",
+    "eslint-config-airbnb": "^15.0.1",
+    "eslint-plugin-import": "^2.6.0",
+    "eslint-plugin-jsx-a11y": "^5.0.3",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-react": "^7.1.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2"
+  }
+}
