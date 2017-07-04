@@ -1,6 +1,6 @@
 function binFromPan(pan) {
   const panStr = pan.toString();
-  if (panStr.length < 4) {
+  if (panStr.length < 8) {
     throw new Error('pan too short!');
   }
   let first = panStr.substr(0, 4);

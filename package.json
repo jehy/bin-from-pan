@@ -1,6 +1,6 @@
 {
   "name": "bin-from-pan",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Differentiates between 6 digit BIN and 8 digit BIN in PAN",
   "main": "index.js",
   "dependencies": {},
